@@ -1,10 +1,9 @@
 .header {
-    background-color: #349d5e;
-    margin: 0;
-    padding: 20px; 
-    width: 100%;
-    color: aliceblue;
+    margin-top: 0%;
+    border-top: 50px solid #2a7a4a;
+    padding-top: 20px;
 }
+
 
 body {
     background-color: #AEF6C7;
@@ -16,7 +15,7 @@ body {
 
 .project {
     background-color: #68c08b;
-    margin: 5%;
+    margin: 20px;
     padding: 20px;
 }
 
@@ -26,4 +25,23 @@ body {
 
 .image {
     width: 200px;
+}
+
+.container-projects {
+  display: grid; /* Activa el modo cuadrícula */
+  grid-template-columns: repeat(2, 1fr); /* Crea 2 columnas de igual ancho */
+  gap: 20px; /* Espacio entre los proyectos */
+  padding: 0 5% 50px 5%; /* Margen lateral */
+}
+
+/* Ajuste opcional para que los proyectos no se vean tan estirados */
+.project {
+    background-color: #68c08b;
+    padding: 20px;
+    margin: 0; /* Quitamos el margin previo para que el gap del grid mande */
+    border-radius: 10px;
+}
+
+a, a:visited {
+    color: black;
 }
